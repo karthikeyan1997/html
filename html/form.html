@@ -1,0 +1,58 @@
+<html>
+<head>
+<script language="javascript">
+function getvalues()
+{
+alert("hai");
+document.getElementById('display').innerHTML="Firstname:" + document.form.firstname.value;
+}
+</script>
+
+
+</head>
+<body>
+<style>
+body
+{
+	background-color:violet;
+</style>
+<form action="#" method="post" name="form">
+<p id="display"></p>  
+<h3>First name:<br></h3>
+  <input type="text" name="firstname" placeholder="First name" required maxlength="15">
+  <br>
+  <h3>Last name:<br></h3>
+  <input type="text" name="lastname"placeholder="last name">
+<br>
+
+
+
+<h3>
+<h3><input type="radio" name="gender" value="male" checked> male<br>
+  <input type="radio" name="gender" value="female"> female<br>
+  <input type="radio" name="gender" value="other"> other<br>
+
+
+<br><p style="color:MediumSeaGreen";>Department</p><br> 
+  <input type="checkbox" name="department" value="CSE">cse<br>	
+  <input type="checkbox" name="department" value="IT">IT<br>
+ <input type="checkbox" name="department" value="Car">ECE<br>
+<br><br></h3>
+
+Enter a DOB
+  <input type="date" name="bday" max="2020-12-31"><br>
+
+ 
+<h2><p style="color:lightgray";>country</p></h2> 
+ <select name="country">
+    <option value="india">india</option>
+    <option value="england">england</option>
+    <option value="US">US</option>
+    <option value="Australia">Australia</option>
+  </select>
+  <br><br>
+<input type="submit" value="submit" onclick="getvalues();return false;"><br></h3>
+</form>
+</body>
+</head>
+</html>
